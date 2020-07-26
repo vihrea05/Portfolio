@@ -1,0 +1,267 @@
+@charset "utf-8";
+
+/* footer */
+.footer{
+    width: 100%;
+    height: auto;
+    border: 0px solid;
+
+}
+
+.footer .inner-footer{
+    width: 100%;
+    /*max-width: 1920px;*/
+    height: 350px;
+    margin: 0 auto;
+    position: relative;
+    color: #fff;
+    background: #ff89a1;
+}
+
+
+/* mfcon 시작 */
+.footer .inner-footer .mfcon{
+    width: 100%;
+    max-width: 1400px;
+    height: 230px;
+    margin: 0 auto;
+    background: #ff89a1;
+}
+
+.footer .inner-footer .mfcon .sub-mfcon{
+    width: 20%;
+    height: auto;
+    box-sizing: border-box;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: 0.3px;
+    margin: 25px auto;
+    float: left;
+}
+
+.footer .inner-footer .mfcon .sub-mfcon::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.footer .inner-footer .mfcon .sub-mfcon>ul>li{
+    padding: 8px 0;
+}
+
+.footer .inner-footer .mfcon .sub-mfcon>ul>li.mtitle1{
+    font-size: 18px;
+    text-align: left;
+}
+
+.mfcon .sub-mfcon>ul>li input[type=email]{
+    width: 250px;
+    height: 30px;
+    border: 0px solid;
+    background: none;
+    border-bottom: 1px solid #fff8;
+    color: #fff;
+    /*display: block;*/
+}
+.mfcon .sub-mfcon>ul>li input[type=email]:focus{
+    outline: none;
+}
+.mfcon .sub-mfcon>ul>li input[type=email]::placeholder{
+    color: #fff;
+    font-size: 15px;
+}
+
+.mfcon .sub-mfcon>ul>li input:hover{
+    color: #fff; 
+}
+
+.mfcon .sub-mfcon>ul>li span.arrowEmail{
+    
+}
+
+
+.footer .inner-footer .mfcon .sub-mfcon>ul>li.sns{
+    text-align: left;
+    font-size: 18px;
+    margin: 20px 0 0;
+}
+
+.footer .inner-footer .mfcon .sub-mfcon>ul>li.snsIcon{
+    float: left;
+}
+
+.footer .inner-footer .mfcon .sub-mfcon>ul>li.snsIcon>ul>li{
+    float: left;
+    padding-right: 25px;
+}
+
+/* 고객 서비스부터 채용 */
+.footer .inner-footer .mfcon .sub-mfcon>ul>li.M{
+    width: 120px;
+    border-bottom: 1px solid #fff8;
+    margin: 0 auto;
+}
+
+.footer .inner-footer .mfcon .sub-mfcon>ul>li h1.mtitle{
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.footer .inner-footer .mfcon .sub-mfcon>ul>li{
+    margin: 6px 0;
+}
+
+.footer .inner-footer .mfcon .sub-mfcon>ul>li a{
+    color: #fff;
+    font-size: 15px;
+    
+}
+
+.footer .inner-footer .mfcon .sub-mfcon>ul>li.M2{
+    width: 240px;
+    border-bottom: 1px solid #fff8;
+    margin: 0 auto;
+}
+
+.footer .inner-footer .mfcon .sub-mfcon>ul .sub>ul{
+    width: 100%;
+    
+}
+
+.footer .inner-footer .mfcon .sub-mfcon>ul .sub>ul.sUl{
+    width: 50%;
+    float: left;
+}
+
+.footer .inner-footer .mfcon .sub-mfcon>ul .sub>ul.sUl>li{
+    padding: 11.5px 0;
+}
+
+.footer .inner-footer .mfcon .sub-mfcon>ul .sub>ul.sUl>li a{
+    color: #fff;
+    font-size: 15px;
+}
+
+
+
+
+/* lfcon 시작 */
+.footer .inner-footer .lfcon{
+    width: 100%;
+    max-width: 1400px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.footer .inner-footer .lfcon .language{
+    width: 120px;
+    border: 0px solid #00f;
+    box-sizing: border-box;
+    float: right;
+}
+
+.footer .inner-footer .lfcon .language::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.footer .inner-footer .lfcon .language span{
+    width: 30px;
+    display: block;
+    float: left;
+    border: 0px solid;
+    box-sizing: border-box;
+}
+
+.footer .inner-footer .lfcon .language img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.footer .inner-footer .lfcon .language select{
+    width: 80px;
+    height: 30px;
+    background: #fff6;
+    display: block;
+    color: #1c1c1c;
+    font-size: 14px;
+    border: 0;
+    float: left;
+    margin-left: 10px;  
+}
+
+
+/* bfcon 시작 */
+.footer .inner-footer .bfcon{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    background: #1c1c1c;
+}
+
+.footer .inner-footer .bfcon .inner-bfcon{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.footer .inner-footer .bfcon .inner-bfcon::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.footer .inner-footer .bfcon .inner-bfcon .siteMap{
+    width: 270px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 auto;
+    border: 0px solid #fff;
+    box-sizing: border-box;
+    
+}
+
+.footer .inner-footer .bfcon .inner-bfcon .siteMap>ul>li{
+    width: 25%;
+    float: left;
+    text-align: center;
+    border: 0px solid;
+    box-sizing: border-box;
+}
+
+.footer .inner-footer .bfcon .inner-bfcon .siteMap>ul>li a{
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+
+}
+
+span.lineb{
+    
+}
+
+.footer .inner-footer .bfcon .inner-bfcon .copyright{
+    width: 300px;
+    height: 30px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer .inner-footer .bfcon .inner-bfcon .copyright p{
+    letter-spacing: 0.4px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+

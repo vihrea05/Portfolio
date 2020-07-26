@@ -1,0 +1,311 @@
+@charset "utf-8";
+
+#wrap .product{
+    width: 100%;
+    height: auto;
+    background: url(../../img/index/Product-dotbg.png) repeat 50%;
+    background-size: cover;
+}
+
+.section1{
+    width: 100%;
+    height: auto;
+    border: 0px solid;
+    margin: 0 auto;
+/*    position: relative;*/
+}
+
+.white-bg{
+    max-width: 1400px;
+    overflow-x: hidden;
+    background-color: white;
+    margin:0 auto;
+    position: relative;
+}
+
+.section1 .videoGallery{
+    width: 100%;
+    max-width: 1920px;
+    height: 768px;
+    margin: 0 auto;
+}
+
+.section1 .videoGallery video{
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+/*
+    position: absolute;
+    top: 0;
+    left: 0;
+*/
+}
+
+
+.section2{
+    width: 100%;
+    height: auto;
+    overflow: visible;
+}
+
+.boxheader{
+    width: 100vw;
+    height: 180px;
+    background: #fe88a0;
+    margin: 0 auto;
+}
+
+.boxheader .boxtext{
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.boxtext p{
+    text-align: center;
+    color: #fff;
+}
+
+p.boxPowder{
+    font-size: 56px;
+    font-weight: bold;
+}
+
+p.boxPowder2{
+    font-size: 26px;
+/*    text-decoration-line: overline underline;*/
+    word-spacing: 4px;
+}
+
+span.boxline{
+    width: 490px;
+    height: 1px;
+    background: #fff;
+    display: block;
+    margin: 0 auto;
+}
+
+span.boxline.line2{
+    
+}
+
+.section2 .section2txt p.modeltxt{
+    text-align: center;
+    padding: 70px 0;
+    color: #fe88a0;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.section2 .productModel{
+    width: 100%;
+    max-width: 1400px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    display: flex;
+}
+
+
+@media only screen and (max-width: 10000px){
+    .section2 .productModel .modelImg img{
+        width: 100%;
+    }
+    .productModel .modelImg:nth-child(2){
+        margin: 0 100px;
+    }
+}
+
+.section2 span.vline{
+    width: 1px;
+    height: 200px;
+    background: #fe88a0;
+    display: block;
+    margin: 70px auto;
+}
+
+.section2 .georgia{
+    width: 100%;
+    max-width: 1400px;
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 150px;
+}
+
+.georgiatxt{
+    width: 100%;
+    height: auto;
+}
+
+.georgiatxt p.georgia1{
+    text-align: center;
+    font-size: 78px;
+    font-family: Century Gothic;
+    font-style: italic;
+}
+
+.georgiatxt p.georgia2{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 30px;
+    color: #333;
+}
+
+.georgiatxt p.georgia3{
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 40px;
+    color: #333;
+}
+
+mark.pink{
+    color: #fe88a0;
+    background: none;
+}
+
+.georgia .georgiaImg{
+    display: flex;
+}
+
+.georgia .georgiaImg img{
+    margin: 0 auto;
+}
+
+.peach-bg{
+    background: url(../../img/index/peachy.png) no-repeat 50%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -10%;
+    left: 0;
+    background-size: auto;
+}
+
+.section3{
+    width: 100%;
+    max-width: 1400px;
+    height: auto;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background: #fff;
+    padding-bottom: 120px;
+}
+
+.section3 .inner-con3{
+    width:  100%;
+    height: auto;
+}
+
+.section3 .inner-con3 span.sec3line{
+    width: 80%;
+    height: 1px;
+    background-color: #fe88a0;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.section3 .inner-con3 .sec1{
+    width: 100%;
+    height: auto;
+}
+
+.section3 .inner-con3 .sec1::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.section3 .inner-con3 .sec1>ul>li{
+    width: 33.3333%;
+    height: auto;
+    float: left;
+    /*padding: 10px 10px;*/
+}
+
+.section3 .inner-con3 .sec1>ul>li .topBox{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    transition: all 0.2s;
+}
+
+.section3 .inner-con3 .sec1>ul>li .topBox:hover{
+    opacity: 60%;
+    transform: scale(0.95);
+    cursor: pointer;
+}
+
+.section3 .inner-con3 .sec1>ul>li .topBox img{
+    display: block;
+    object-fit: scale-down;
+    margin: 0 auto;
+}
+
+.section3 .inner-con3 .sec1>ul>li .bottomBox{
+    width: 100%;
+    height: auto;
+}
+
+.section3 .inner-con3 .sec1>ul>li .bottomBox p.sec3title{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 20px;
+    margin: 0 auto;
+    color: #ff4f84;
+    padding-top: 10px;
+}
+
+.section3 .inner-con3 .sec1>ul>li .bottomBox p.sec3detail{
+    font-size: 18px;
+    text-align: center;
+    line-height: 20px;
+    margin: 0 auto;
+    padding: 15px 0;
+    color: #888;
+}
+
+.section3 .inner-con3 .sec1>ul>li .bottomBox .sec3Box{
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 21px;
+    background: #222;
+    color: #fff;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.section3 .inner-con3 .sec1>ul>li .bottomBox .sec3Box:hover{
+    background: #fff;
+    border: 1px solid #222;
+    box-sizing: border-box;
+    color: #222;
+}
+
+
+
+/*width:768이상 1024이하*/
+@media only screen and (max-width: 1023px){
+    .section2 .productModel .modelImg{
+        width: 33%;
+        margin: 0 50px
+    }
+}
+
+
+/*width:767px 이하*/
+@media only screen and (max-width: 767px){
+    .section2 .productModel .modelImg{
+        width: 33%;
+    }
+}
+
+
+
+
+
+
