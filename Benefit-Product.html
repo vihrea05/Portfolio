@@ -242,12 +242,12 @@
         </div>
 
         <div class="footer">
-            <div class="inner-footer">
-                <div class="mfcon">
-                    <div class="sub-mfcon">
+            <div class="mainWrapper">
+                <div class="subWrapper">
+                    <div class="sub-mfcon" style="width:80%;">
                         <ul>
                             <li class="mtitle1">뉴스레터 구독하기</li>
-                            <li>
+                            <li style="display:flex;">
                                 <label for="emailaddress"></label>
                                 <input type="email" name="emailaddress" id="emailaddress" placeholder="이메일주소">
                                 <span class="arrowEmail"><a href="#"><img src="img/commons/arrowEmail.png" alt="arrowEmail"></a></span>
@@ -275,6 +275,9 @@
                             </li>
                         </ul>
                     </div>
+                </div>
+
+                <div class="subWrapper">
                     <div class="sub-mfcon">
                         <ul>
                             <li class="M">
@@ -286,14 +289,17 @@
                             <li><a href="#">이벤트</a></li>
                         </ul>
                     </div>
+                </div>
+
+                <div class="subWrapper">
                     <div class="sub-mfcon">
                         <ul>
-                            <li class="M2">
+                            <li class="M">
                                 <h1 class="mtitle">제품</h1>
                             </li>
                             <div class="sub">
                                 <ul class="sUl">
-                                    <li><a href="#">신제품</a></li>
+                                    <li><a href="Benefit-Product.html">신제품</a></li>
                                     <li><a href="#">눈썹</a></li>
                                     <li><a href="#">페이스</a></li>
                                     <li><a href="#">아이</a></li>
@@ -308,6 +314,9 @@
                             </div>
                         </ul>
                     </div>
+                </div>
+
+                <div class="subWrapper">
                     <div class="sub-mfcon">
                         <ul>
                             <li class="M">
@@ -317,6 +326,9 @@
                             <li><a href="#">이용약관</a></li>
                         </ul>
                     </div>
+                </div>
+
+                <div class="subWrapper">
                     <div class="sub-mfcon 5">
                         <ul>
                             <li class="M">
@@ -327,58 +339,47 @@
                         </ul>
                     </div>
                 </div>
-
-                <script>
-                    var key = 0;
-                    $('span.kr').on('click', spankrFunc);
-
-                    function spankrFunc() {
-                        if (key == 0) {
-                            $('.langSub').addClass('on');
-                            key = 1;
-                        } else {
-                            $('.langSub').removeClass('on');
-                            key = 0;
-                        }
-                    }
-                </script>
-
-                <div class="lfcon">
-                    <div class="language">
-                        <span class="country"><img src="img/commons/globe-icon.png" alt="globe"></span>
-                        <select name="language" id="language">
-                            <option value="한국어">한국어</option>
-                            <option value="영어">영어</option>
-                        </select>
-                    </div>
-                    <!--<div class="language">
-                        <span class="country"><img src="img/commons/globe-icon.png" alt="globe"></span>
-                        <span class="kr">한국어</span>
-                        <div class="langSub">
-                            <ul>
-                                <li>한국어</li>
-                                <li>영어</li>
-                            </ul>
-                        </div>
-                    </div>-->
+            </div>
+            <div class="lfcon">
+                <div class="language">
+                    <span class="country"><img src="img/commons/globe-icon.png" alt="globe"></span>
+                    <select name="language" id="language">
+                        <option value="한국어">한국어</option>
+                        <option value="영어">영어</option>
+                    </select>
                 </div>
-                <div class="bfcon">
-                    <div class="inner-bfcon">
-                        <div class="siteMap">
-                            <ul>
-                                <li><a href="#">개인정보</a></li><span class="lineb"></span>
-                                <li><a href="#">취급방침</a></li><span class="lineb"></span>
-                                <li><a href="#">사이트맵</a></li><span class="lineb"></span>
-                                <li><a href="#">이용약관</a></li>
-                            </ul>
-                        </div>
-                        <div class="copyright">
-                            <p>©2020, Benefit Cosmetics LLC</p>
-                        </div>
+            </div>
+            <div class="bfcon">
+                <div class="inner-bfcon">
+                    <div class="siteMap">
+                        <ul>
+                            <li><a href="#">개인정보</a></li><span class="lineb"></span>
+                            <li><a href="#">취급방침</a></li><span class="lineb"></span>
+                            <li><a href="#">사이트맵</a></li><span class="lineb"></span>
+                            <li><a href="#">이용약관</a></li>
+                        </ul>
+                    </div>
+                    <div class="copyright">
+                        <p>©2020, Benefit Cosmetics LLC</p>
                     </div>
                 </div>
             </div>
         </div>
+
+        <script>
+            var key = 0;
+            $('span.kr').on('click', spankrFunc);
+
+            function spankrFunc() {
+                if (key == 0) {
+                    $('.langSub').addClass('on');
+                    key = 1;
+                } else {
+                    $('.langSub').removeClass('on');
+                    key = 0;
+                }
+            }
+        </script>
 
         <div class="topGo">
             <img src="img/commons/ArrowUp.png" alt="ArrowUp">

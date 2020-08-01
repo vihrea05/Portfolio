@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Benefit Cosmetics</title>
@@ -23,7 +24,7 @@
                         이제 베네피트 브로우바 온라인 예약 사이트에서 쉽고 빠르게 브로우바를 이용하세요!</p>
                 </div>
                 <span class="menu">=</span>
-<!--                <span class="menu"><img src="img/commons/spanmenu.jpg" alt="menuIcon"></span>-->
+                <!--                <span class="menu"><img src="img/commons/spanmenu.jpg" alt="menuIcon"></span>-->
                 <span class="logo"><img src="img/commons/benefit-logo.png" alt=""></span>
                 <!--
                 <div class="Logo">
@@ -184,7 +185,6 @@
                 </div>
             </div>
         </div>
-
 
         <script>
             function changeAboutSubmenu(path) {
@@ -624,15 +624,13 @@
                 </div>
             </div>
         </div>
-
-
         <div class="footer">
-            <div class="inner-footer">
-                <div class="mfcon">
-                    <div class="sub-mfcon">
+            <div class="mainWrapper">
+                <div class="subWrapper">
+                    <div class="sub-mfcon" style="width:80%;">
                         <ul>
                             <li class="mtitle1">뉴스레터 구독하기</li>
-                            <li>
+                            <li style="display:flex;">
                                 <label for="emailaddress"></label>
                                 <input type="email" name="emailaddress" id="emailaddress" placeholder="이메일주소">
                                 <span class="arrowEmail"><a href="#"><img src="img/commons/arrowEmail.png" alt="arrowEmail"></a></span>
@@ -660,6 +658,9 @@
                             </li>
                         </ul>
                     </div>
+                </div>
+
+                <div class="subWrapper">
                     <div class="sub-mfcon">
                         <ul>
                             <li class="M">
@@ -671,9 +672,12 @@
                             <li><a href="#">이벤트</a></li>
                         </ul>
                     </div>
+                </div>
+
+                <div class="subWrapper">
                     <div class="sub-mfcon">
                         <ul>
-                            <li class="M2">
+                            <li class="M">
                                 <h1 class="mtitle">제품</h1>
                             </li>
                             <div class="sub">
@@ -693,6 +697,9 @@
                             </div>
                         </ul>
                     </div>
+                </div>
+
+                <div class="subWrapper">
                     <div class="sub-mfcon">
                         <ul>
                             <li class="M">
@@ -702,6 +709,9 @@
                             <li><a href="#">이용약관</a></li>
                         </ul>
                     </div>
+                </div>
+
+                <div class="subWrapper">
                     <div class="sub-mfcon 5">
                         <ul>
                             <li class="M">
@@ -712,89 +722,82 @@
                         </ul>
                     </div>
                 </div>
-
-                <script>
-                    var key = 0;
-                    $('span.kr').on('click', spankrFunc);
-
-                    function spankrFunc() {
-                        if (key == 0) {
-                            $('.langSub').addClass('on');
-                            key = 1;
-                        } else {
-                            $('.langSub').removeClass('on');
-                            key = 0;
-                        }
-                    }
-                </script>
-
-                <div class="lfcon">
-                    <div class="language">
-                        <span class="country"><img src="img/commons/globe-icon.png" alt="globe"></span>
-                        <select name="language" id="language">
-                            <option value="한국어">한국어</option>
-                            <option value="영어">영어</option>
-                        </select>
-                    </div>
-                    <!--<div class="language">
-                        <span class="country"><img src="img/commons/globe-icon.png" alt="globe"></span>
-                        <span class="kr">한국어</span>
-                        <div class="langSub">
-                            <ul>
-                                <li>한국어</li>
-                                <li>영어</li>
-                            </ul>
-                        </div>
-                    </div>-->
-                </div>
-                
             </div>
-        </div>
-        <div class="bfcon">
-                    <div class="inner-bfcon">
-                        <div class="siteMap">
-                            <ul>
-                                <li><a href="#">개인정보</a></li><span class="lineb"></span>
-                                <li><a href="#">취급방침</a></li><span class="lineb"></span>
-                                <li><a href="#">사이트맵</a></li><span class="lineb"></span>
-                                <li><a href="#">이용약관</a></li>
-                            </ul>
-                        </div>
-                        <div class="copyright">
-                            <p>©2020, Benefit Cosmetics LLC</p>
-                        </div>
+            <div class="lfcon">
+                <div class="language">
+                    <span class="country"><img src="img/commons/globe-icon.png" alt="globe"></span>
+                    <select name="language" id="language">
+                        <option value="한국어">한국어</option>
+                        <option value="영어">영어</option>
+                    </select>
+                </div>
+            </div>
+            <div class="bfcon">
+                <div class="inner-bfcon">
+                    <div class="siteMap">
+                        <ul>
+                            <li><a href="#">개인정보</a></li><span class="lineb"></span>
+                            <li><a href="#">취급방침</a></li><span class="lineb"></span>
+                            <li><a href="#">사이트맵</a></li><span class="lineb"></span>
+                            <li><a href="#">이용약관</a></li>
+                        </ul>
+                    </div>
+                    <div class="copyright">
+                        <p>©2020, Benefit Cosmetics LLC</p>
                     </div>
                 </div>
-        <div class="topGo">
-            <img src="img/commons/ArrowUp.png" alt="ArrowUp">
+            </div>
         </div>
 
         <script>
-            //아래 화살표를 클릭하면 처음 화면으로
-            $('.topGo').on('click', function() {
-                $('html,body').animate({
-                    scrollTop: 0
-                }, 200);
-            })
+            var key = 0;
+            $('span.kr').on('click', spankrFunc);
 
-            /*var itemsLi = $('.items>ul>li');
-
-            itemsLi.on('click', itemsLiFunc);
-
-            function itemsLiFunc() {
-
-                var idx = $(this).index();
-                console.log(idx)
-                console.log(idx + " -> " + $('.section').eq(idx).offset().top)
-                var goTop = $('.section').eq(idx).offset().top;
-                console.log(goTop);
-
-                $('html,body').animate({
-                    scrollTop: goTop
-                }, 200);
-            }*/
+            function spankrFunc() {
+                if (key == 0) {
+                    $('.langSub').addClass('on');
+                    key = 1;
+                } else {
+                    $('.langSub').removeClass('on');
+                    key = 0;
+                }
+            }
         </script>
+
+
+
     </div>
+
+    <div class="topGo">
+        <img src="img/commons/ArrowUp.png" alt="ArrowUp">
+    </div>
+
+    <script>
+        //아래 화살표를 클릭하면 처음 화면으로
+        $('.topGo').on('click', function() {
+            $('html,body').animate({
+                scrollTop: 0
+            }, 200);
+        })
+
+        /*var itemsLi = $('.items>ul>li');
+
+        itemsLi.on('click', itemsLiFunc);
+
+        function itemsLiFunc() {
+
+            var idx = $(this).index();
+            console.log(idx)
+            console.log(idx + " -> " + $('.section').eq(idx).offset().top)
+            var goTop = $('.section').eq(idx).offset().top;
+            console.log(goTop);
+
+            $('html,body').animate({
+                scrollTop: goTop
+            }, 200);
+        }*/
+    </script>
+
 
 
 
