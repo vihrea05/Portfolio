@@ -11,6 +11,7 @@
 .header {
     width: 100%;
     height: auto;
+    position: relative;
 }
 
 .notification {
@@ -36,6 +37,7 @@ p.noti a {
     height: 100px;
     background: url(../../img/commons/header.png) no-repeat 50%;
     background-size: cover;
+    position: relative;
 }
 
 .leftMenu {
@@ -52,11 +54,17 @@ p.noti a {
     color: white;
 }
 
+.mainmenu-item-wrapper {
+    justify-content: space-evenly;
+    height: 100px;
+}
+
 .mainmenu-item {
     text-align: center;
     line-height: 100px;
     max-height: 100px;
     justify-content: space-between;
+    padding: 0 30px;
 }
 
 .mainmenu-item a {
@@ -65,7 +73,7 @@ p.noti a {
 
 .logo {
     background: url(../../img/commons/benefit-logo2.png) no-repeat 50%;
-    max-height: 100px;
+    height: 100px;
 }
 
 .logo:hover {
@@ -80,4 +88,96 @@ p.noti a {
     width: 33.333%;
     color: white;
     font-size: 1.3em;
+}
+
+.subMenu {
+    background: transparent;
+    position: absolute;
+    top: 130px;
+    left: 0px;
+    width: 100%;
+    height: 340px
+}
+
+.subMenu-inner {
+    width: 950px;
+    height: 100%;
+    margin: 0 auto;
+    border: 1px solid #8885;
+    box-sizing: border-box;
+    background: white;
+}
+
+.subMenu-inner > ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.subMenu-inner a {
+    color: black;
+}
+
+.categoryName {
+    line-height: 66px;
+}
+
+.categoryName > a {
+    color: #ff91a7;
+}
+
+.productName {
+    color: black;
+    height: 40px;
+}
+
+.hidden {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+}
+
+.hamburgerMenu {
+    left: -50vw;
+    width: 50vw;
+    height: 100vh;
+    z-index: 2;
+    background-color: aliceblue;
+    display:none;
+}
+
+@media only screen and (max-width:1399px) {
+    .hamburger {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 100px;
+        width: 100px;
+        z-index: 1;
+        font-size: 1.8em;
+        color: white;
+        display: block;
+    }
+
+    .hamburger > i {
+        position: absolute;
+        top: 35px;
+        left: 35px;
+    }
+
+    .hamburgerMenu {
+        display: block;
+        position: fixed;
+        transition: left 0.5s;
+    }
+    .hamburgerMenu.show{
+        left:0;
+    }
+    .hamburgerMenu > .closeBtn{
+        font-size: 1.8em;
+        position: absolute;
+        right:10px;
+        top:10px;
+    }
 }

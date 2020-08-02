@@ -12,12 +12,12 @@
             font-family: "Yoon YGO 530", "맑은고딕";
         }
     </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/commons/font-awesome.css">
 </head>
 
 
 <body>
-    <div class="header">
+    <div class="header" onmouseout="hideAllSubmenu()">
         <div class="notification">
             <p class="noti">
                 이제 베네피트 브로우바 온라인 예약 사이트에서 쉽고 빠르게 <a href="#">브로우바</a>를 이용하세요!
@@ -28,25 +28,96 @@
                 <p class="store"><a href="#">매장찾기</a> <i class="fas fa-map-marker-alt"></i></p>
             </div>
             <div class="col lg-8 md-12 mainMenu row">
-                <div class="col lg-1 md-0 mainmenu-item">
-                    <a href="#">베네피트에 대하여</a></div>
-                <div class="col lg-1 md-0 mainmenu-item">
-                    <a href="#">베스트셀러</a></div>
-                <div class="col lg-1 md-0 mainmenu-item">
-                    <a href="#">제품</a></div>
+                <div class="col lg-5 md-0 row mainmenu-item-wrapper">
+                    <div class="mainmenu-item" onmouseover="showSubmenuAbout()">
+                        <a href="#">베네피트에 대하여</a>
+                        <div class="subMenu hidden" id="about">
+                            <div class="subMenu-inner">
+                                <ul>
+                                    <li><a href="#">베네피트 스토리</a></li>
+                                    <li><a href="#">베네피트 히스토리</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mainmenu-item">
+                        <a href="#">베스트셀러</a>
+                    </div>
+                    <div class="mainmenu-item" onmouseover="showSubmenuProduct()">
+                        <a href="#">제품</a>
+                        <div class="subMenu hidden" id="product">
+                            <div class="subMenu-inner">
+                                <ul>
+                                    <li class="categoryName"><a href="Benefit-Product.html">신제품</a></li>
+                                    <li class="categoryName"><a href="#">눈썹</a>
+                                        <ul>
+                                            <li class="productName"><a href="#">브로우 젤</a></li>
+                                            <li class="productName"><a href="#">브로우 펜슬</a></li>
+                                            <li class="productName"><a href="#">브로우 툴 & 키트</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="categoryName"><a href="#">페이스</a>
+                                        <ul>
+                                            <li class="productName"><a href="#">블러셔</a></li>
+                                            <li class="productName"><a href="#">치크</a></li>
+                                            <li class="productName"><a href="#">컨실러</a></li>
+                                            <li class="productName"><a href="#">페이스 파우더</a></li>
+                                            <li class="productName"><a href="#">페이스 프라이머</a></li>
+                                            <li class="productName"><a href="#">파운데이션</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="categoryName"><a href="#">아이</a>
+                                        <ul>
+                                            <li class="productName"><a href="#">아이라이너</a></li>
+                                            <li class="productName"><a href="#">아이섀도우</a></li>
+                                            <li class="productName"><a href="#">아이 프라이머</a></li>
+                                            <li class="productName"><a href="#">마스카라</a></li>
+                                            <li class="productName"><a href="#">속눈썹</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="categoryName"><a href="#">립</a>
+                                        <ul>
+                                            <li class="productName"><a href="#">립스틱</a></li>
+                                            <li class="productName"><a href="#">립글로스</a></li>
+                                            <li class="productName"><a href="#">틴트</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="categoryName"><a href="#">스킨케어</a>
+                                        <ul>
+                                            <li class="productName"><a href="#">바디케어</a></li>
+                                            <li class="productName"><a href="#">아이케어</a></li>
+                                            <li class="productName"><a href="#">클렌저</a></li>
+                                            <li class="productName"><a href="#">메이크업 리무버</a></li>
+                                            <li class="productName"><a href="#">모이스처라이저</a></li>
+                                            <li class="productName"><a href="#">메이크업 리무버</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col lg-2 md-12 logo" onclick='toHome()'>
+                    <script>
+                        function toHome() {
+                            window.location.href = "/index.html"
+                        }
+                    </script>
+                </div>
+                <div class="col lg-5 md-0 row mainmenu-item-wrapper">
+                    <div class="mainmenu-item">
+                        <a href="#">메이크업</a>
+                        <div class="subMenu">
+                            <div class="subMenu-inner">
 
-                <script>
-                    function toHome() {
-                        window.location.href = "/index.html"
-                    }
-                </script>
-                <div class="col lg-2 md-12 logo" onclick='toHome()'></div>
-                <div class="col lg-1 md-0 mainmenu-item">
-                    <a href="#">메이크업</a></div>
-                <div class="col lg-1 md-0 mainmenu-item">
-                    <a href="#">뷰티 서비스</a></div>
-                <div class="col lg-1 md-0 mainmenu-item">
-                    <a href="#">브로우바</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mainmenu-item">
+                        <a href="#">뷰티 서비스</a></div>
+                    <div class="mainmenu-item">
+                        <a href="#">브로우바</a></div>
+                </div>
             </div>
             <div class="col lg-2 md-0 rightMenu ">
                 <div class="row" style="width:70%; text-align: center;">
@@ -54,10 +125,66 @@
                     <a href="#"><i class="fas fa-user"></i></a>
                     <a href="#"><i class="fas fa-shopping-bag"></i></a>
                 </div>
-
+            </div>
+            <div class="hamburger" onclick="showHamburgerMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="hamburgerMenu" id="hamburgerMenu">
+                <i class="fas fa-times closeBtn" onclick="closeHamburgerMenu()"> </i>
             </div>
         </div>
     </div>
+    <script>
+        function hideAllSubmenu() {
+            document.querySelectorAll('.subMenu').forEach(function(subcategory) {
+                subcategory.classList.add('hidden');
+            })
+        }
+
+        function showSubmenuAbout() {
+            hideAllSubmenu();
+            document.querySelector('#about').classList.remove("hidden");
+        }
+
+        function showSubmenuProduct() {
+            hideAllSubmenu();
+            document.querySelector('#product').classList.remove("hidden");
+        }
+
+        function showSubmenuMakeup() {
+            hideAllSubmenu();
+            document.querySelector('#makeup').classList.remove("hidden");
+        }
+
+        function showSubmenuBeauty() {
+            hideAllSubmenu();
+            document.querySelector('#beauty').classList.remove("hidden");
+        }
+
+        function showSubmenuBrow() {
+            hideAllSubmenu();
+            document.querySelector('#brow').classList.remove("hidden");
+        }
+
+        function showHamburgerMenu(){
+            document.querySelector("#hamburgerMenu").classList.add("show");
+        }
+        
+        function closeHamburgerMenu() { document.querySelector("#hamburgerMenu").classList.remove("show");
+        }
+        
+        /*$('span.menu').on('click', leftMenuFunc);
+
+        
+
+        $('span.close').on('click', closeFunc);
+
+        function closeFunc() {
+            $('.header .inner-header .Menu').animate({
+                left: '-100%'
+            }, 300);
+        }*/
+    </script>
 
 
 </body></html>
